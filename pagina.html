@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ASCII Video Player Mejorado</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>ASCII Video Player</h1>
+
+<input type="file" id="videoFile" accept="video/*"><br><br>
+
+<label for="resolution">Columnas ASCII:</label>
+<select id="resolution">
+  <option value="80">80</option>
+  <option value="120" selected>120</option>
+  <option value="160">160</option>
+  <option value="200">200</option>
+</select>
+
+<label for="asciiSet">Conjunto ASCII:</label>
+<input type="text" id="asciiSet" value="@%#*+=-:. " size="20">
+
+<label for="asciiQuality">Niveles ASCII (definición):</label>
+<select id="asciiQuality">
+  <option value="10" selected>10</option>
+  <option value="20">20</option>
+  <option value="40">40</option>
+  <option value="70">70</option>
+</select>
+
+<canvas id="asciiCanvas"></canvas>
+
+<div id="controls">
+  <button id="playPause">Pausa</button>
+  <span id="timeLabel">00:00 / 00:00</span>
+</div>
+
+<div id="progress">
+  <div id="progressBar"></div>
+</div>
+
+<video id="video" style="display:none;"></video>
+
+<script src="script.js"></script>
+
+</body>
+</html>

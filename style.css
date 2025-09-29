@@ -1,0 +1,6 @@
+  body { background: black; color: white; font-family: monospace; text-align: center; margin:0; padding:0; }
+  #asciiCanvas { background: black; display: block; margin: 0 auto; }
+  #controls { margin-top: 10px; }
+  button, select, input { padding: 5px 10px; margin: 0 5px; }
+  #progress { width: 80%; height: 10px; background: #555; margin: 10px auto; position: relative; cursor:pointer; }
+  #progressBar { height: 10px; background: #0f0; width: 0%; }
